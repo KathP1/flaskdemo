@@ -28,6 +28,7 @@ def search():
 def results():
     search_term = session['search_term']
     page = get_page(search_term)
+    title = page.title
     return render_template("results.html", page=page)
 
 
